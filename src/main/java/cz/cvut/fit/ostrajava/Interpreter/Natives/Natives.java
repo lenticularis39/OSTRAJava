@@ -12,6 +12,7 @@ import cz.cvut.fit.ostrajava.Interpreter.Natives.Conversion.IntToCharArray;
 import cz.cvut.fit.ostrajava.Interpreter.Natives.IO.Console.*;
 import cz.cvut.fit.ostrajava.Interpreter.Natives.IO.File.CloseReader;
 import cz.cvut.fit.ostrajava.Interpreter.Natives.IO.File.OpenReader;
+import cz.cvut.fit.ostrajava.Interpreter.Natives.IO.File.OpenStdinReader;
 import cz.cvut.fit.ostrajava.Interpreter.Natives.IO.File.ReadLine;
 import cz.cvut.fit.ostrajava.Interpreter.Natives.Math.LogInt;
 import cz.cvut.fit.ostrajava.Interpreter.Natives.Math.PowInt;
@@ -69,6 +70,7 @@ public class Natives {
             addNative("logint:" + Types.Number() + ":" + Types.Number(), new LogInt(heap));
             addNative("powint:" + Types.Number() + ":" + Types.Number(), new PowInt(heap));
             addNative("openreader:" + Types.CharArray(), new OpenReader(heap));
+            addNative("openstdinreader", new OpenStdinReader(heap));
             addNative("readline:" + Types.Number(), new ReadLine(heap));
             addNative("closereader:" + Types.Number(), new CloseReader(heap));
             addNative("arraysize:" + Types.CharArray(), new CharArraySize(heap));

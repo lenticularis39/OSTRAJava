@@ -1,9 +1,10 @@
 Êþºº
-8
+9
 bazmek.bazmek
 dryst.nachachar
 citac.openreader:chachar[]
 readeraddress
+citac.openstdinreader
 citac.readline:cyslo
 dryst
 dryst.dryst:chachar[]
@@ -12,7 +13,7 @@ citac
 bazmek
 1
 readeraddress:cyslo
-7
+9
 citac.otevr:dryst
 3
 0
@@ -26,6 +27,15 @@ aload 0
 invokevirtual 2 
 putfield 3 
 return 
+citac.otevrvstup
+1
+0
+5
+aload 0 
+aload 0 
+invokevirtual 4 
+putfield 3 
+return 
 citac.citajradku
 2
 0
@@ -33,14 +43,14 @@ citac.citajradku
 aload 0 
 getfield 3 
 aload 0 
-invokevirtual 4 
+invokevirtual 5 
 astore 1 
 aload 1 
 ipush 0 
 if_icmpeq 12 
 aload 1 
-new 5 
-invokespecial 6 
+new 6 
+invokespecial 7 
 areturn 
 ipush 0 
 areturn 
@@ -51,10 +61,14 @@ citac.zavr
 aload 0 
 getfield 3 
 aload 0 
-invokevirtual 7 
+invokevirtual 8 
 return 
 citac.openreader:chachar[]
 2
+1
+0
+citac.openstdinreader
+1
 1
 0
 citac.closereader:cyslo

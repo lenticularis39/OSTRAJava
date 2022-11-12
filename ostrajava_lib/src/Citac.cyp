@@ -13,6 +13,10 @@ tryda Citac {
       joch.readerAddress = openReader(chachari) pyco
    }
 
+   otevrVstup(){
+      joch.readerAddress = openStdinReader() pyco
+   }
+
    Dryst citajRadku(){
       toz chachar[] radka = readLine(joch.readerAddress) pyco
 
@@ -28,6 +32,7 @@ tryda Citac {
    }
 
    natyv cyslo openReader(chachar[] fileName) pyco
+   natyv openStdinReader() pyco
    natyv closeReader(cyslo addr) pyco
    natyv chachar[] readLine(cyslo addr) pyco
     
